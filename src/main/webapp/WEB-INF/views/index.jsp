@@ -15,5 +15,6 @@
 </script>
 <body>
 Hello 안녕!
+<p><a href="board/login">Login Page</a> </p>
 </body>
 </html>
