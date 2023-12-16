@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class BoardController {
     @Autowired
     BoardService boardService;
-    @RequestMapping(value = "/board/list", method = RequestMethod.GET)
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String boardlist(Model model) {
         model.addAttribute("list", boardService.getBoardList());
-        return "index";
+        return "list";
     }
 
-    @RequestMapping(value = "/board/add", method = RequestMethod.GET)
+    @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String addPost() {
         return "addpostform";
     }
